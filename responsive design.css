@@ -1,0 +1,675 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+:root {
+  --font-color: blue;
+  --font-family: "Qahiri", sans-serif;
+}
+body {
+  background-color: rgb(253, 251, 251);
+}
+/* Navbar*/
+
+.nav_bar {
+  /* border: 0.2rem solid rgb(253, 252, 252); */
+  width: 100%;
+  height: 8%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.logo {
+  margin-left: 1rem;
+}
+#iconbar {
+  color: black;
+  font-size: 4rem;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  opacity: 0;
+  visibility: hidden;
+}
+#iconbar:hover {
+  color: orange;
+}
+
+.nav_bar ul {
+  display: flex;
+  justify-content: space-around;
+  /* border: 2px solid brown; */
+  width: 60%;
+}
+.nav_bar li:hover {
+  background-color: black;
+}
+.nav_bar a:hover {
+  color: orange;
+}
+.nav_bar a {
+  /* border: .2rem solid black; */
+  font-weight: bold;
+  font-size: 2rem;
+  color: black;
+}
+.fab {
+  color: black;
+  font-size: 80px;
+  text-shadow: 0.2rem 0.2rem 0.2rem grey;
+}
+
+/*Home Section*/
+
+.home {
+  /* border: 2px solid red; */
+  padding-bottom: 1rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  background: url("https://st.depositphotos.com/1000423/1456/i/950/depositphotos_14563005-stock-photo-business-person-against-the-blackboard.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  opacity: 0.8;
+  z-index: 100;
+}
+.home h1 {
+  font-size: 10rem;
+  color: black;
+  font-family: "Fredoka One", cursive;
+}
+.home h2 {
+  font-size: 5rem;
+  text-transform: capitalize;
+  color: black;
+  font-family: "Fredoka One", cursive;
+}
+.home h3 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: black;
+  font-family: "Fredoka One", cursive;
+}
+.btn {
+  margin-top: 2rem;
+}
+.btn button {
+  width: 15rem;
+  margin-left: 4.4rem;
+  padding: 0.4rem 0.4rem;
+  font-size: 2rem;
+  font-weight: 100;
+  border-radius: 0.5rem;
+}
+
+/* Section */
+
+.section {
+  /* border: 2px solid brown; */
+  display: flex;
+  /* height: auto; */
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(253, 251, 251);
+  /* border: 2px solid red; */
+  align-items: center;
+  margin-top: 1rem;
+}
+.section h1 {
+  text-shadow: 0.1rem 0.1rem 0.2rem black;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Fredoka One", cursive;
+}
+.section h3 {
+  font-family: "Fredoka One", cursive;
+  font-size: 2rem;
+}
+.smallsection {
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+}
+.roadmap_desc {
+  height: 20%;
+  flex: 0.9;
+  color: black;
+  line-height: 1.8rem;
+  font-weight: 550;
+  font-size: 1.6rem;
+  padding: 0 1rem;
+}
+.abc_div {
+  height: 50vh;
+  width: 44vw;
+  /* border: 3px solid black; */
+}
+.roadmap_video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.roadmap_video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Content */
+
+.main_contentdiv {
+  /* border: 0.2rem solid green; */
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+.main_contentdiv h1 {
+  /* border: 2px solid mediumseagreen; */
+  text-shadow: 0.1rem 0.1rem 0.2rem black;
+  text-align: center;
+  font-size: 5rem;
+  text-transform: capitalize;
+  font-family: "Fredoka One", cursive;
+}
+.video_container{
+  /* border: 2px solid blueviolet; */
+  width: 100%;
+  display: flex;
+  justify-content:space-between ;
+}
+.video_container_inner {
+  height:25%;
+  width:30%;
+}
+.video_container_inner .iframe1 ,.iframe2,.iframe3{
+  /* border: 2px solid black; */
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.video_container_inner .iframe1 iframe,
+.video_container_inner .iframe2 iframe,
+.video_container_inner .iframe3 iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid magenta; */
+} 
+
+/* Clients section*/
+.client_section {
+  margin-top: 2rem;
+  /* border: 2px solid green; */
+}
+.client_section h1 {
+  text-align: center;
+  font-size: 5rem;
+  text-shadow: 0.1rem 0.1rem 0.2rem black;
+  font-family: "Fredoka One", cursive;
+  text-transform: capitalize;
+}
+.client_logo {
+  margin-top: 2rem;
+  /* border: 2px solid cyan; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.client_logo div .fab {
+  font-size: 7rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem grey;
+}
+
+/*Contact */
+
+.contact {
+  /* border: .2rem solid black; */
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to right, lightgrey, lightcyan);
+}
+.contact h1 {
+  width: 100%;
+  height: 7rem;
+  /* border:2px solid violet ; */
+  text-shadow: 0.1rem 0.1rem 0.2rem black;
+  text-align: center;
+  font-size: 5rem;
+  text-transform: capitalize;
+  font-family: "Fredoka One", cursive;
+}
+.contact form {
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 4rem 3rem;
+  background-color: transparent;
+}
+.contact div {
+  margin: 1.3rem 1.3rem;
+}
+.contact label {
+  font-size: 2.3rem;
+  margin-right: 4.4rem;
+  text-shadow: 0.1rem 0.1rem 0.1rem black;
+}
+.phone label {
+  margin-right: 0.7rem;
+}
+.contact input {
+  width: 35rem;
+  background-color: transparent;
+  outline: none;
+  border-radius: 0.2rem;
+  border-color: rgb(253, 251, 251);
+}
+.submit_btn button {
+  width: 15rem;
+  margin-left: 4.4rem;
+  padding: 0.4rem 0.4rem;
+  font-size: 2rem;
+  font-weight: 100;
+  border-radius: 0.5rem;
+}
+
+/*Footer*/
+
+.footer {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/*Media Queries*/
+
+@media (max-width: 1296px) {
+  .roadmap_desc {
+    flex: 0.6;
+  }
+  .abc_div {
+    width: 50vw;
+    height: 80%;
+    display: flex;
+    align-items: center;
+  }
+  .roadmap_desc {
+    flex: 1;
+  }
+}
+@media (max-width: 990px) {
+  .video_container{
+    height:75rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .video_container_inner{
+    width: 45%;
+    height:40%;
+  }
+  .nav_bar a {
+    font-size: 2rem;
+    color: black;
+    margin: 0;
+  }
+  .nav_bar ul {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+  }
+  .home h1 {
+    font-size: 9rem;
+  }
+  .home h2 {
+    font-size: 4rem;
+  }
+  .home h3 {
+    font-size: 2.5rem;
+  }
+  .section h1 {
+    font-size: 3.5rem;
+  }
+  .abc_div {
+    margin-top: 2.5rem;
+    width: 60vw;
+  }
+  .smallsection {
+    flex-direction: column;
+    align-items: center;
+  }
+  .roadmap_desc {
+    width: 100%;
+    height: 25%;
+  }
+  .abc_div {
+    width: 60%;
+    height: 40%;
+  }
+  .main_contentdiv h1 {
+    font-size: 4rem;
+  }
+  
+  .client_section h1 {
+    font-size: 4.5rem;
+  }
+  .contact h1 {
+    font-size: 4rem;
+  }
+  .contact label {
+    font-size: 2.1rem;
+    margin-right: 2rem;
+  }
+  .contact form {
+    width: 70%;
+  }
+  .phone label {
+    margin-right: 0;
+  }
+  .footer {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 926px) {
+  .nav_bar {
+    flex-direction: column;
+    height: 10%;
+  }
+  #iconbar {
+    visibility: visible;
+    opacity: 1;
+  }
+  .logo {
+    font-size: 70px;
+  }
+  .nav_bar ul {
+    flex-direction: column;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 80%;
+    display: none;
+    background-color: #d1d9d9;
+  }
+  .nav_bar ul li {
+    padding: 1rem;
+    /* border: 2px solid greenyellow; */
+    text-align: center;
+  }
+  .nav_bar a {
+    color: black;
+  }
+  .nav_bar ul li:hover {
+    background-color: #eeeeee;
+  }
+  .btn button {
+    width: 11.5rem;
+    font-size: 1.8rem;
+  }
+  .submit_btn button {
+    width: 12rem;
+    margin-left: 4rem;
+    padding: 0.3rem 0.3rem;
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 880px) {
+  .client_logo div .fab {
+    font-size: 6rem;
+  }
+  .section h1 {
+    font-size: 2.5rem;
+  }
+  .footer {
+    font-size: 1.5rem;
+  }
+  .nav_bar a {
+    font-size: 1.8rem;
+  }
+  .client_logo div i {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 800px) {
+  .section h1 {
+    font-size: 3rem;
+    margin-left: 0;
+  }
+  .content_desc {
+    flex-direction: column;
+  }
+
+  .contact h1 {
+    font-size: 3rem;
+  }
+  .client_section h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width:750px){
+  .video_container{
+    flex-direction: column;
+    height:60rem;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .video_container_inner{
+    width: 45%;
+    height:40%;
+  }
+}
+@media (max-width: 685px) {
+  .video_container{
+    justify-content: space-around;
+  }
+  .video_container_inner{
+    width: 45%;
+    height:50%;
+    margin:0;
+    padding: 0;
+  }
+  .abc_div {
+    width: 70%;
+  }
+  .contact label {
+    margin-right: 3rem;
+  }
+  .contact input {
+    width: 20rem;
+  }
+  .phone label {
+    margin-right: 0.8rem;
+  }
+  
+}
+@media (max-width: 650px) {
+  .logo {
+    margin-left: 0;
+    font-size: 75px;
+  }
+  .fab {
+    font-size: 65px;
+  }
+  #iconbar {
+    font-size: 30px;
+  }
+  .home h1 {
+    font-size: 8rem;
+  }
+  .home h2 {
+    font-size: 3rem;
+  }
+  .home h3 {
+    font-size: 2rem;
+  }
+  .btn button {
+    width: 11rem;
+    font-size: 1.5rem;
+  }
+  .section h1 {
+    font-size: 2.6rem;
+  }
+  .section h3 {
+    font-size: 1.7rem;
+  }
+  .roadmap_desc {
+    font-size: 1.4rem;
+    line-height: 1.3rem;
+  }
+  .main_contentdiv h1 {
+    font-size: 3.5rem;
+    margin-top: 2rem;
+  }
+  .submit_btn button {
+    width: 11rem;
+    font-size: 1.5rem;
+  }
+  .client_section h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 570px) {
+  .client_logo div .fab {
+    font-size: 5rem;
+  }
+  .video_container{
+    height: 50rem;
+  }
+  .video_container_inner{
+    width: 50%;
+    height: 70%;
+  }
+}
+
+@media (max-width: 530px) {
+  .video_container_inner{
+    width: 50%;
+    height: 100%;
+    justify-content: space-between;
+  }
+  .section h1 {
+    font-size: 2rem;
+  }
+  .contact label {
+    font-size: 1.9rem;
+  }
+  .video_container{
+    height: 50rem;
+  }
+  .video_container{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .video_container{
+    height: 50rem;
+  }
+  .video_container_inner{
+    width: 60%;
+    height: 100%;
+    /* justify-content: space-between; */
+  }
+  .client_logo div .fab {
+    font-size: 4rem;
+  }
+  .home h1 {
+    font-size: 6.5rem;
+  }
+  .home h2 {
+    font-size: 2.5rem;
+  }
+  .home h3 {
+    font-size: 1.6rem;
+  }
+  .abc_div {
+    width: 80%;
+    height: 90%;
+  }
+  .section h1 {
+    font-size: 1.9rem;
+  }
+  .btn button {
+    width: 10rem;
+    font-size: 1.2rem;
+  }
+  .main_contentdiv h1 {
+    font-size: 3rem;
+  }
+  .contact form {
+    width: 100%;
+  }
+  .phone label {
+    margin-right: 0rem;
+  }
+  .contact label {
+    font-size: 1.6rem;
+  }
+  .nav_bar a {
+    font-size: 1.7rem;
+  }
+  .footer {
+    font-size: 1rem;
+  }
+  .submit_btn button {
+    padding: 0;
+  }
+}
+@media (max-width: 320px) {
+  .contact input {
+    width: 15rem;
+  }
+  .nav_bar a {
+    font-size: 1.5rem;
+  }
+  .fab {
+    font-size: 60px;
+  }
+  #iconbar {
+    font-size: 25px;
+  }
+  .home h1 {
+    font-size: 5.2rem;
+  }
+  .home h2 {
+    font-size: 2rem;
+  }
+  .contact form {
+    margin: 0;
+  }
+  .submit_btn button {
+    margin: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 330px) {
+.video_container{
+  height: 35rem;
+}

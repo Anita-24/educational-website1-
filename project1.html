@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="responsive design.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Qahiri&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/4d5bef4bc9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="nav_bar">
+      <div class="logo">
+        <i class="fab fa-autoprefixer"></i>
+      </div>
+
+      <ul id="list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#Roadmap">Roadmap</a></li>
+        <li><a href="#Content">Content</a></li>
+        <li><a href="#">Clients</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <a href="#" id="iconbar" onclick="responsive_menu()"
+      ><i class="fas fa-bars"></i
+    ></a>
+
+    <div class="home">
+      <h2>amibition is the key to</h2>
+      <h1>SUCCESS!!</h1>
+      <h3>Now also available online courses</h3>
+      <div class="btn">
+        <button>Book Now</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <h1>Roadmap for Complete Web Development</h1>
+      <div class="smallsection">
+        <div class="roadmap_desc">
+          <h3>Brief Description</h3>
+          <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita id
+          voluptates quas quis cumque, inventore enim architecto dolor officia
+          reprehenderit vitae! Illum ad magnam quam doloribus voluptates id
+          quibusdam voluptatibus saepe maiores dignissimos accusantium aut ut,
+          tenetur itaque. Iste beatae soluta sequi voluptatem aliquid laboriosam
+          exercitationem debitis autem animi quis odio voluptas, fuga quae
+          aperiam consequatur ex reiciendis saepe molestias asperiores, sint in
+          harum incidunt magnam minima. Asperiores et cumque dolor enim ab,
+          accusamus iusto dolore nobis minus obcaecati. Lorem ipsum dolor sit,
+          amet consectetur adipisicing elit. Facere quam fugiat accusantium
+          eligendi suscipit, rerum in asperiores adipisci cupiditate voluptas
+          similique non magni tempore aliquam, facilis ipsam quod nam quas.
+          Minus, quis soluta magnam nostrum, odit corporis architecto mollitia
+          velit, neque perferendis sunt eligendi culpa inventore consequatur qui
+          dolore similique.
+        </div>
+        <div class="abc_div">
+          <div class="roadmap_video">
+            <iframe
+              src="https://www.youtube.com/embed/GLk7-imcjiI"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main_contentdiv">
+      <h1>content</h1>
+      <div class="video_container">
+        <div class="video_container_inner">
+          <div class="iframe1">
+            <iframe
+              id="demo_1"
+              src="https://www.youtube.com/embed/l-EkcthUMl4?list=PLfqMhTWNBTe3H6c9OGXb5_6wcc1Mca52n"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="video_container_inner">
+          <div class="iframe2">
+            <iframe
+              id="demo_2"
+              src="https://www.youtube.com/embed/l1EssrLxt7E?list=PLfqMhTWNBTe3H6c9OGXb5_6wcc1Mca52n"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="video_container_inner">
+          <div class="iframe3">
+            <iframe
+              id="demo_3"
+              src="https://www.youtube.com/embed/bgKYobOXTZ0?list=PLfqMhTWNBTe3H6c9OGXb5_6wcc1Mca52n"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="client_section" id="clients">
+      <h1>Our Clients</h1>
+      <div class="client_logo">
+        <div
+          id="
+      amazon"
+        >
+          <i class="fab fa-amazon"></i>
+        </div>
+        <div><i class="fab fa-facebook-square"></i></div>
+        <div><i class="fab fa-apple"></i></div>
+      </div>
+    </div>
+    <div class="contact">
+      <h1>Contact Us</h1>
+      <form>
+        <div class="name">
+          <label for="name">Name:</label>
+          <input type="text" id="name" />
+        </div>
+
+        <div class="email">
+          <label for="email">Email:</label>
+          <input type="text" id="email" />
+        </div>
+
+        <div class="phone">
+          <label for="Phone">Phone No:</label>
+          <input type="text" id="phone" />
+        </div>
+
+        <div class="submit_btn">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <footer class="footer">@All copyrights reserved</footer>
+
+    <script src="jquery-3.6.0.js"></script>
+
+    <script>
+      let flag = false;
+      let e = document.getElementById("list");
+      function responsive_menu() {
+        if (!flag) {
+          e.style.display = "flex";
+          flag = true;
+        } else {
+          e.style.display = "none";
+          flag = false;
+        }
+      }
+    </script>
+  </body>
+</html>
